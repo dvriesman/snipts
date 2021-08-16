@@ -21,9 +21,15 @@ gcloud compute networks subnets list
 watch "gcloud compute instances list | grep <instance name>"
 ```
 
-### Create credential from service account
+### Create local credentials file from service account
 ```
 gcloud iam service-accounts keys create my_credential.json --iam-account=[account]
 ```
+
+### Get permissions (policies) from project id
+```
+gcloud projects get-iam-policy <project_id>
+```
+
 
 
